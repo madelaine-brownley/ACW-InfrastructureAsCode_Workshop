@@ -25,6 +25,9 @@
         },
         "clientIPAddress": {
             "value": "204.74.194.16"
-    }
+        },
+        "contactWebAnalyticsWorkspace": {
+            "value": "contactWebAnalytics"
+        }
   }
 }

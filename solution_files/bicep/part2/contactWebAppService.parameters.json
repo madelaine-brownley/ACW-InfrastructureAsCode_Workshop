@@ -28,6 +28,9 @@
         },
         "appInsightsConnectionStringKey": { 
             "value": "APPINSIGHTS:CONNECTIONSTRING"
+        },
+        "logAnalyticsWorkspaceName": {
+            "value": "contactWebAnalytics"
         }
     }
 }

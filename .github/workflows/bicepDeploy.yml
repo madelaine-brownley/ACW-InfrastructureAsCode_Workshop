@@ -13,7 +13,7 @@ env:
   TEMPLATE: 'iac/deployContactWebArchitecture.bicep'
   PARAMETERS: 'iac/deployContactWebArchitecture.parameters.json'  
   DEPLOYMENT_NAME: 'BicepDeployResources'
-  REGION: 'eastus'
+  REGION: 'eastus2'
   
 permissions:
   id-token: write

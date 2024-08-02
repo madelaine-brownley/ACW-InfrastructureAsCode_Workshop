@@ -14,6 +14,7 @@ param sqlServerAdminLogin string
 @secure()
 param sqlServerAdminPassword string
 param clientIPAddress string
+param logAnalyticsWorkspaceName string
 
 resource contactWebResourceGroup 'Microsoft.Resources/resourceGroups@2018-05-01' = {
   name: rgName
@@ -31,5 +32,14 @@ module contactWebDatabase 'azureSQL.bicep' = {
     sqlServerAdminLogin: sqlServerAdminLogin
     sqlServerAdminPassword: sqlServerAdminPassword
     clientIPAddress: clientIPAddress
+  }
+}
+
+module contactWebAnalyticsWorkspace 'logAnalyticsWorkspace.bicep' = {
+  name: '$logAnalyticsWorkspaceName'
+  scope: contactWebResourceGroup
+  params: {
+    location: contactWebResourceGroup.location
+    logAnalyticsWorkspaceName: logAnalyticsWorkspaceName
   }
 }
