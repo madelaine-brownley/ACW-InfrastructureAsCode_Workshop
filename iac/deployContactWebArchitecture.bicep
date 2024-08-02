@@ -15,6 +15,8 @@ param sqlServerAdminLogin string
 param sqlServerAdminPassword string
 param clientIPAddress string
 param logAnalyticsWorkspaceName string
+param appInsightsName string
+param logAnalyticsWorkspaceId string
 
 resource contactWebResourceGroup 'Microsoft.Resources/resourceGroups@2018-05-01' = {
   name: rgName
