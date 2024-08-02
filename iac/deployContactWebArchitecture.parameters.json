@@ -26,8 +26,14 @@
         "clientIPAddress": {
             "value": "204.74.194.16"
         },
-        "contactWebAnalyticsWorkspace": {
+        "logAnalyticsWorkspaceName": {
             "value": "contactWebAnalytics"
+        },
+        "appInsightsName": {
+            "value": "contactWebAppInsights"
+        },
+        "logAnalyticsWorkspaceId": {
+            "value": "/subscriptions/${subscription().subscriptionId}/resourceGroups/${rgname}/providers/Microsoft.OperationalInsights/workspaces/${laWorkspaceName}"
         }
   }
 }
