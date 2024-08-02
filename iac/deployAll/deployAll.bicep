@@ -12,7 +12,7 @@ resource storageResourceGroup 'Microsoft.Resources/resourceGroups@2024-03-01' = 
   location: location
 }
 
-module storageAccount './storageAccount.bicep' = {
+module storageAccount '../storageAccount/storageAccount.bicep' = {
   name: 'storageAccount'
   scope: storageResourceGroup
   params: {
@@ -23,7 +23,7 @@ module storageAccount './storageAccount.bicep' = {
   }
 }
 
-module storageAccountContainer './storageAccountContainer.bicep' = {
+module storageAccountContainer '../storageAccount/storageAccountContainer.bicep' = {
   name: 'storageAccountContainer-${containerName}'
   scope: storageResourceGroup
   params: {

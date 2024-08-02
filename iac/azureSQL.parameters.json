@@ -2,11 +2,8 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-      "rgName": {
-        "value": "iac-resource-group-temp"
-        },
         "location": {
-            "value": "eastus2"
+            "value": "eastus"
         },
         "uniqueIdentifier": {
             "value": "20291231acw"
@@ -24,7 +21,7 @@
             "value": "workshopDbPwd#54321!"
         },
         "clientIPAddress": {
-            "value": "204.74.194.16"
+            "value": "10.10.10.10"
+        }
     }
-  }
 }
