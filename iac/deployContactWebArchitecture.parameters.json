@@ -28,12 +28,6 @@
         },
         "logAnalyticsWorkspaceName": {
             "value": "contactWebAnalytics"
-        },
-        "appInsightsName": {
-            "value": "contactWebAppInsights"
-        },
-        "logAnalyticsWorkspaceId": {
-            "value": "/subscriptions/${subscription().subscriptionId}/resourceGroups/${rgname}/providers/Microsoft.OperationalInsights/workspaces/${laWorkspaceName}"
         }
   }
 }
